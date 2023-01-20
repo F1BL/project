@@ -1,0 +1,180 @@
+@media only screen and (max-width: 958px) {
+  .container {
+    padding: 50px 100px;
+  }
+  header {
+    padding: 50px 100px;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  header .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.1s ease-in-out;
+  }
+  header .hamburger .line::before,
+  header .hamburger .line::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  header .hamburger .line::before {
+    transform: translateY(-8px);
+  }
+  header .hamburger .line::after {
+    transform: translateY(8px);
+  }
+  header .hamburger.open .line {
+    background: transparent;
+    box-shadow: none;
+  }
+  header .hamburger.open .line::before {
+    transform: rotate(45deg);
+  }
+  header .hamburger.open .line::after {
+    transform: rotate(-45deg);
+  }
+  header .navbar {
+    height: 0;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #0b1925;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+  }
+  header .navbar.active {
+    height: 450px;
+  }
+  .navbar ul {
+    display: block;
+    width: fit-content;
+    margin: 10vh auto 0 auto;
+    padding: 0 39%;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .navbar.active ul {
+    opacity: 1;
+  }
+  .navbar ul li a {
+    margin-bottom: 12px;
+    color: black;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 100px 50px;
+  }
+  header {
+    padding: 0 100px;
+  }
+  .navbar ul {
+    padding: 0 31%;
+  }
+  #hero .container {
+    padding: 250px 50px;
+  }
+  .learn-more .container .sec-heading {
+    padding: 0;
+  }
+  .learn-more .play-btn .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .learn-more .play-btn .circle:hover {
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 70px;
+  }
+  .learn-more .play-btn .circle:hover > .polygon {
+    color: #55c2d8;
+    font-size: 35px;
+  }
+  .learn-more .play-btn .circle .polygon {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .container {
+    padding: 100px 20px;
+  }
+  header {
+    padding: 0 30px;
+  }
+  #hero .container {
+    padding: 250px 20px 50px 20px;
+  }
+  main .container {
+    padding: 150px 20px;
+  }
+  main .container .sub-text {
+    padding: 0 2%;
+  }
+  main .container .asides {
+    flex-direction: column;
+  }
+  main .container .asides p {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .learn-more .container {
+    padding: 150px 20px;
+  }
+  .learn-more .container .sec-heading {
+    padding: 0;
+  }
+  .learn-more .play-btn .circle {
+    width: 100px;
+    height: 100px;
+  }
+  .learn-more .play-btn .circle:hover {
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 70px;
+  }
+  .learn-more .play-btn .circle:hover > .polygon {
+    color: #55c2d8;
+    font-size: 35px;
+  }
+  .learn-more .play-btn .circle .polygon {
+    font-size: 50px;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+  }
+  footer .footer-logo {
+    justify-content: center;
+  }
+  footer p,
+  footer a {
+    text-align: center;
+  }
+  footer p {
+    padding: 15px 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  #hero .container {
+    padding: 250px 50px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

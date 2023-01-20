@@ -1,0 +1,357 @@
+/* Deafaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro";
+}
+
+h1,
+h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+p {
+  text-align: center;
+}
+
+.container {
+  padding: 100px 150px;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1647058824), rgba(0, 0, 0, 0));
+  padding: 0 150px;
+}
+
+header .logo {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li .nav__link {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 20px;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+}
+
+.navbar ul li .nav__link,
+.navbar ul li .nav__link::after,
+.navbar ul li .nav__link::before {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li .nav__link:hover {
+  color: #55c2d8;
+}
+
+.navbar ul li .nav__link {
+  position: relative;
+}
+
+.navbar ul li .nav__link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background-color: rgb(255, 255, 255);
+  height: 1px;
+}
+
+.navbar ul li .nav__link:hover:after {
+  width: 80%;
+  background-color: #55c2d8;
+}
+
+.navbar .hamburger {
+  display: none;
+}
+
+.hero {
+  background-image: url(fayzullayev_Biloliddin_final_project/assets/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero .container {
+  text-align: center;
+  padding: 40vh 30vw 19vh 30vw;
+}
+
+.hero .container p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 30px 0;
+}
+
+.hero .container h1 {
+  color: #fff;
+}
+
+.hero .logo-anim {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  animation: scale-key 3s ease-in-out infinite alternate-reverse;
+}
+
+.hero img {
+  animation: rotation-key 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes rotation-key {
+  0% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes scale-key {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+  0% {
+    transform: scale(1);
+  }
+}
+main {
+  text-align: center;
+}
+
+main .container h1 {
+  color: #464547;
+}
+
+main .container .sub-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 30px 0;
+  color: #666;
+  padding: 0 25%;
+}
+
+main .container .asides {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+main .container .asides p {
+  color: #666666;
+  text-align: left;
+  padding: 2em;
+  width: 50%;
+}
+
+main .container .main-btn {
+  background-color: #55c2d8;
+  color: rgb(255, 255, 255);
+  font-family: "Oswald";
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1.8em;
+  border-radius: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  border-color: #55c2d8;
+  border-style: none;
+  transition: all 0.5s ease-in-out;
+}
+
+main .container .main-btn a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+main .container .main-btn:hover {
+  -ms-transform: rotate(15deg); /* IE 9 */
+  -ms-transform-origin: 20% 40%; /* IE 9 */
+  transform: rotate(15deg);
+  transform-origin: 20% 40%;
+}
+
+.learn-more {
+  background-image: url(../assets/bg2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.learn-more .container {
+  padding: 50px 150px;
+  text-align: center;
+}
+
+.learn-more .container h1 {
+  color: #fff;
+}
+
+.learn-more .container .sec-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 30px 0;
+  padding: 0 30%;
+}
+
+.learn-more .play-btn {
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.learn-more .play-btn .circle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 140px;
+  height: 140px;
+  background-color: #55c2d8;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.learn-more .play-btn .circle:hover {
+  background-color: rgb(255, 255, 255);
+  width: 130px;
+  height: 130px;
+}
+
+.learn-more .play-btn .circle:hover > .polygon {
+  color: #55c2d8;
+  font-size: 65px;
+}
+
+.learn-more .play-btn .circle .polygon {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer {
+  background-color: #464547;
+}
+
+footer .container {
+  display: grid;
+  grid-template-rows: 90%;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+footer p,
+footer a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  text-align: left;
+}
+
+footer .footer-logo p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+footer .footer-logo {
+  grid-column: span 1;
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-logo img {
+  height: 1.5em;
+  padding-right: 1em;
+}
+
+footer .footer-info {
+  grid-column: span 3;
+}
+
+footer .emailing {
+  grid-row: 3/3;
+  grid-column: 2/2;
+}
+
+footer .footer-copy {
+  grid-column: 4/4;
+  grid-row: 3/3;
+  text-align: right !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
